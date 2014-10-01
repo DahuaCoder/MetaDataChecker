@@ -42,7 +42,7 @@ def read_urls(input_file):
 
 
 def check_length(sentences, max_length):
-    for index, sentence in enumerate(sentences):
+    for index, sentence in enumerate(sentences, start=1):
         length = len(sentence)
         print(index, end='')
         print(":", end='')
